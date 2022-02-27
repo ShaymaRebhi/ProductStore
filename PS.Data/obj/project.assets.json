@@ -162,20 +162,6 @@
           "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll": {}
         }
       },
-      "PS.Data/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "5.0.11",
-          "PS.Domain": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/PS.Data.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/PS.Data.dll": {}
-        }
-      },
       "PS.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -548,11 +534,6 @@
         "version.txt"
       ]
     },
-    "PS.Data/1.0.0": {
-      "type": "project",
-      "path": "../PS.Data/PS.Data.csproj",
-      "msbuildProject": "../PS.Data/PS.Data.csproj"
-    },
     "PS.Domain/1.0.0": {
       "type": "project",
       "path": "../PS.Domain/PS.Domain.csproj",
@@ -562,7 +543,6 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Microsoft.EntityFrameworkCore >= 5.0.11",
-      "PS.Data >= 1.0.0",
       "PS.Domain >= 1.0.0"
     ]
   },
@@ -572,11 +552,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\maison info\\Desktop\\4twin\\S2\\.NET\\ProductStore\\PS.Services\\PS.Services.csproj",
-      "projectName": "PS.Services",
-      "projectPath": "C:\\Users\\maison info\\Desktop\\4twin\\S2\\.NET\\ProductStore\\PS.Services\\PS.Services.csproj",
+      "projectUniqueName": "C:\\Users\\maison info\\Desktop\\4twin\\S2\\.NET\\ProductStore\\PS.Data\\PS.Data.csproj",
+      "projectName": "PS.Data",
+      "projectPath": "C:\\Users\\maison info\\Desktop\\4twin\\S2\\.NET\\ProductStore\\PS.Data\\PS.Data.csproj",
       "packagesPath": "C:\\Users\\maison info\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\maison info\\Desktop\\4twin\\S2\\.NET\\ProductStore\\PS.Services\\obj\\",
+      "outputPath": "C:\\Users\\maison info\\Desktop\\4twin\\S2\\.NET\\ProductStore\\PS.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\maison info\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -593,9 +573,6 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\maison info\\Desktop\\4twin\\S2\\.NET\\ProductStore\\PS.Data\\PS.Data.csproj": {
-              "projectPath": "C:\\Users\\maison info\\Desktop\\4twin\\S2\\.NET\\ProductStore\\PS.Data\\PS.Data.csproj"
-            },
             "C:\\Users\\maison info\\Desktop\\4twin\\S2\\.NET\\ProductStore\\PS.Domain\\PS.Domain.csproj": {
               "projectPath": "C:\\Users\\maison info\\Desktop\\4twin\\S2\\.NET\\ProductStore\\PS.Domain\\PS.Domain.csproj"
             }

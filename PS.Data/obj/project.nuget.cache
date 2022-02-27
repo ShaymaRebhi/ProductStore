@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LfChPHU0ZIQH+87LsVeQ3zPpZ2aGlpp3vYwBFcWvbHwyTgDzoJ6XyLz5v4usnqZI9GEfjZ1OMxQ2paqQopYhDA==",
+  "dgSpecHash": "W5QkXebDqmkwxWzb+aBDQ1ksV3ZMZlmudnCbqBkyvTUnTTTpjdeuhsZmtv4JLOzwPkPGwmE38TfP7BAou32hSg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\maison info\\Desktop\\4twin\\S2\\.NET\\ProductStore\\PS.GUI\\PS.GUI.csproj",
+  "projectFilePath": "C:\\Users\\maison info\\Desktop\\4twin\\S2\\.NET\\ProductStore\\PS.Data\\PS.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\maison info\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.11\\microsoft.entityframeworkcore.5.0.11.nupkg.sha512",
     "C:\\Users\\maison info\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.11\\microsoft.entityframeworkcore.abstractions.5.0.11.nupkg.sha512",
