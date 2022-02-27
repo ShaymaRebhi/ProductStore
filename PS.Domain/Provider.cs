@@ -43,9 +43,13 @@ namespace PS.Domain
         {
             return UserName.Equals(user) && Password.Equals(pass);
         }
+        public static void Calculer(int a, int b, ref int c)
+        {
+            c = a + b;
+        }
 
         // another methode
-        
+
         public bool Login (string user , string pass , string email=null) {
             if (Email != null)
                 return (UserName.Equals(user) && Password.Equals(pass) && Email.Equals(email));
@@ -67,8 +71,36 @@ namespace PS.Domain
         }
         public void GetProducts(string filterType , string filterValue)
         {
-            
+            switch (filterType)
+            {
+                case "Name":
+                    foreach (Product p in products)
+                    {
+                        if (p.Name == filterValue)
+                            Console.WriteLine(p);
+                    }
+                    break;
+                case "dateProd":
+                    foreach (Product p in products)
+                    {
+                        if (p.DateProd == DateTime.Parse(filterValue))
+                            Console.WriteLine(p);
+                    }
+                    break;
+
+                case "Price":
+                    foreach (Product p in products)
+                    {
+                        if (p.Price == Double.Parse(filterValue))
+                            Console.WriteLine(p);
+                    }
+                    break;
+
+
             }
+
         }
+    }
+        
     
 }

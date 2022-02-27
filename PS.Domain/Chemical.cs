@@ -10,5 +10,8 @@ namespace PS.Domain
         {
             base.GetMyType();
             Console.WriteLine("chemical");
+        }        public override string ToString()
+        {
+            return base.ToString() + "city: " + City;
         }    }
 }
