@@ -15,7 +15,7 @@ namespace PS.Domain
                     Console.WriteLine("ConfirmPassword unvalide");
                 else ConfirmPassword = value; }
         }
-        public DateTime DateCreated { get; set; }
+        //public DateTime DateCreated { get; set; }
         public string Email { get; set; }
         public int Id { get; set; }
         public Boolean IsApproved { get; set; }

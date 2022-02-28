@@ -24,3 +24,5 @@ C:\Users\maison info\Desktop\4twin\S2\.NET\ProductStore\PS.Services\obj\Debug\ne
 C:\Users\maison info\Desktop\4twin\S2\.NET\ProductStore\PS.Services\obj\Debug\netcoreapp3.1\PS.Services.csproj.CopyComplete
 C:\Users\maison info\Desktop\4twin\S2\.NET\ProductStore\PS.Services\obj\Debug\netcoreapp3.1\PS.Services.dll
 C:\Users\maison info\Desktop\4twin\S2\.NET\ProductStore\PS.Services\obj\Debug\netcoreapp3.1\PS.Services.pdb
+C:\Users\maison info\Desktop\4twin\S2\.NET\ProductStore\PS.Services\bin\Debug\netcoreapp3.1\PS.Data.dll
+C:\Users\maison info\Desktop\4twin\S2\.NET\ProductStore\PS.Services\bin\Debug\netcoreapp3.1\PS.Data.pdb

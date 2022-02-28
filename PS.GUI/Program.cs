@@ -2,6 +2,7 @@
 using System;
 using PS.Services;
 using System.Collections.Generic;
+using PS.Data;
 
 namespace PS.GUI
 {
@@ -38,8 +39,8 @@ namespace PS.GUI
 
             Provider p = new Provider()
             {
-                UserName = "mouheb",
-                Email = "mhamdi.mouheb@esprit.tn",
+                UserName = "shayma",
+                Email = "shayma.rebhi@esprit.tn",
                 password = "1234567",
                 confirmPassword = "1234567"
             };
@@ -60,9 +61,9 @@ namespace PS.GUI
 
             Provider.Calculer(i, j, ref k);
 
-            Console.WriteLine("Login: " + p.Login("mouheb", "1234567"));
+            Console.WriteLine("Login: " + p.Login("shayma", "1234567"));
 
-            Console.WriteLine("Login: " + p.Login("mouheb", "1234567", "mhamdi.mouheb@esprit.tn"));
+            Console.WriteLine("Login: " + p.Login("shayma", "1234567", "shayma.rebhi@esprit.tn"));
             Console.WriteLine(k);
 
             Console.WriteLine("-------------------------------------------------------------------");
@@ -149,6 +150,15 @@ namespace PS.GUI
             }
             Console.WriteLine("------------------------order by city----------------------");
 
+            Console.WriteLine("------------------------INSERTION DANS LA BASE DE DONNEE----------------------");
+            PSContext ctx = new PSContext();
+
+            ctx.Products.Add(p2);
+            ctx.Chemicals.Add(c1);
+            ctx.SaveChanges();
+
         }
+
     }
+
     }
