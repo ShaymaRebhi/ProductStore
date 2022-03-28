@@ -73,26 +73,32 @@ namespace PS.GUI
             {
                 Name = "chemical1",
                 Price = 50,
-                City = "paris"
+               // Myadress.City = "paris"
             };
+            c1.Myadress.City = "paris";
+
             Chemical c2 = new Chemical()
             {
                 Name = "chemical2",
                 Price = 150,
-                City = "paris"
+               
             };
+            c2.Myadress.City = "paris";
+
             Chemical c3 = new Chemical()
             {
                 Name = "chemical3",
                 Price = 20,
-                City = "tunis"
+                
             };
+            c3.Myadress.City = "tunis";
             Chemical c4 = new Chemical()
             {
                 Name = "chemical4",
                 Price = 150,
-                City = "madrid"
+               
             };
+            c4.Myadress.City = "madrid";
             Product b = new Biological();
             ps.GetMyType();
             c1.GetMyType();

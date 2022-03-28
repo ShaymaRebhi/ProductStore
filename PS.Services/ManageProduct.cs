@@ -84,19 +84,19 @@ namespace PS.Services
         public IEnumerable<Chemical> GetChemicalCity()
         {
             var req = from c in lsProduct.OfType<Chemical>()
-                      orderby c.City
+                      orderby c.Myadress.City
                       select c;
-            var req2 = lsProduct.OfType<Chemical>().OrderByDescending(ch => ch.City);
+            var req2 = lsProduct.OfType<Chemical>().OrderByDescending(ch => ch.Myadress.City);
             return req2;
         }
         public IEnumerable<IGrouping<string, Chemical>> GetChemicalGroupByCity()
         {
             var req = from c in lsProduct.OfType<Chemical>()
-                      orderby c.City
-                      group c by c.City;
+                      orderby c.Myadress.City
+                      group c by c.Myadress.City;
             // return req;
 
-            var req2 = lsProduct.OfType<Chemical>().OrderBy(ch => ch.City).GroupBy(ch => ch.City);
+            var req2 = lsProduct.OfType<Chemical>().OrderBy(ch => ch.Myadress.City).GroupBy(ch => ch.Myadress.City);
             return req2;
 
         

@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 
 namespace PS.Domain
 {
@@ -8,6 +11,10 @@ namespace PS.Domain
     {
         //public string ConfirmPassword { get; set; }
         private string ConfirmPassword;
+        [DataType(DataType.Password)]
+        [Required]
+        [NotMapped]// mechy stocké fil bd , just nconformiw beha
+        [Compare("Password" , ErrorMessage ="ConfirmPassowrd is not equal to password ")]
         public string confirmPassword
         {
             get { return ConfirmPassword; }
@@ -16,12 +23,19 @@ namespace PS.Domain
                 else ConfirmPassword = value; }
         }
         //public DateTime DateCreated { get; set; }
+        [DataType(DataType.EmailAddress)]
+        [Required]
         public string Email { get; set; }
-        public int Id { get; set; }
+        [Key]
+        public int ProviderCode { get; set; }
         public Boolean IsApproved { get; set; }
         //public string Password { get; set; }
         // proprité paramétré 
+       
         private string Password;
+        [DataType(DataType.Password)]
+        [Required(ErrorMessage = "password minlength must be 10 ")]
+        [MinLength(10)]
         public string password {
             get { return Password; }
             set { if (value.Length > 20 || value.Length < 5)
